@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FillDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Delivery Address"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/t1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/ic_person"
+                android:layout_marginTop="30dp"
+                android:hint="  Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@id/txtname" />
+
+            <EditText
+                android:id="@+id/txtadd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/t7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/ic_address"
+                android:hint="  Address"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:id="@+id/t10"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@id/txtadd" />
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/t10"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint="  Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@id/txtemail" />
+
+            <EditText
+                android:id="@+id/txtphn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/t2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:hint="  Mobile Number"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@id/txtphn" />
+
+            <Button
+                android:id="@+id/btnbill"
+                style="@style/loginButton"
+                android:layout_below="@id/t8"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="generate bill" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
